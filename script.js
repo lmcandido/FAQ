@@ -1,7 +1,7 @@
 function toggleAnswer(element) {
     element.classList.toggle("active");
 
-    const answer = elementNextElementSibling;
+    const answer = element.NextElementSibling;
     if (answer.style.display === "block") {
         answer.style.display = "none";
         element.querySelector('.plus-sign').textContent = "+";
