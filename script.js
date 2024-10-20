@@ -13,4 +13,4 @@ function toggleAnswer(element) {
     }
 }
 
-faqquestion.addEventListener('click', toggleAnswer);
+faqquestion.addEventListener('click', toggleAnswer());
