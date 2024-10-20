@@ -4,16 +4,13 @@ const originalImage = "https://raw.githubusercontent.com/lmcandido/FAQ/262c5f514
 const newImageSource = "https://raw.githubusercontent.com/lmcandido/FAQ/0ff113a00d8f341ef2144542f39c7e33b9aa6f90/assets/images/icon-minus.svg";
 
 imageElements.forEach((image) => {
-    const answer = image.nextElementSibling;
 
-    image.addEventListener("click", function(){
+    image.addEventListener("click", function() {
 
         if (image.src === originalImage){
             image.src = newImageSource;
-            answer.computedStyleMap.display = "block";
         } else {
             image.src = originalImage;
-            answer.computedStyleMap.display = "none";
         }
     });
 });
