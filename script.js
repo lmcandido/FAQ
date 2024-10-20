@@ -14,5 +14,5 @@ function toggleAnswer(element) {
 }
 
 Array.from(document.querySelectorAll(".clickable")).forEach(function(element) {
-    toggleAnswer(document.querySelector(".clickable"));
+    toggleAnswer(element);
   });
