@@ -1,37 +1,44 @@
-body {
-    background-color: gray;
-}
-
-.faq-container{
+/* Container for all FAQ items */
+.faq-container {
     max-width: 600px;
-    margin: 0;
+    margin: 0 auto;
     padding: 20px;
-}
-
-.faq-item{
-    margin-bottom: 5px;
-    border-radius: 3px;
-    overflow: hidden; /* Hide answer when collapsed */
-}
-
-.faq-question {
+  }
+  
+  /* Each individual FAQ item */
+  .faq-item {
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden; /* Hide the answer when collapsed */
+  }
+  
+  /* Question section with clickable area */
+  .faq-question {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-}
-
-.plus-sign {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  /* Plus sign next to the question */
+  .plus-sign {
     font-size: 20px;
-    color: purple;
-}
-
-.faq-answer{
+    color: #4CAF50;
+  }
+  
+  /* The answer is hidden by default */
+  .faq-answer {
     padding: 15px;
     background-color: #fff;
-    display: none; /* Hide answer by default */
-}
-
-.faq-question.active .plus-sign{
+    display: none; /* Hide the answer by default */
+  }
+  
+  /* When the FAQ item is open, the plus turns into a minus */
+  .faq-question.active .plus-sign {
     content: "-";
-    color: purple;
-}
+    color: red; /* Change to red to indicate it's opened */
+  }
+  
