@@ -1,6 +1,4 @@
-const imageElements = document.querySelector(".clickable-image");
-
-
+const imageElements = document.querySelectorAll(".clickable-image");
 
 function toggleAnswer(element) {
     element.classList.toggle("active");
@@ -16,7 +14,7 @@ function toggleAnswer(element) {
 }
 
 imageElements.forEach((element) => {
-    element.addEventListener('click', function(){
-        toggleAnswer(element);
+    element.addEventListener("click", function(){
+        toggleAnswer(this);
     });
 });
