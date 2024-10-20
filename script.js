@@ -1,3 +1,5 @@
+const faqquestion = document.querySelector('.faq-question');
+
 function toggleAnswer(element) {
     element.classList.toggle("active");
 
@@ -10,3 +12,5 @@ function toggleAnswer(element) {
         element.querySelector('.plus-sign').textContent = "-";
     }
 }
+
+faqquestion.addEventListener('click', toggleAnswer);
