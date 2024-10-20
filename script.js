@@ -10,10 +10,10 @@ imageElements.forEach((image) => {
     image.addEventListener("click", function(){
         if (image.src === originalImage){
             image.src = newImageSource;
-            hiddenText.computedStyleMap.display = "block";
+            hiddenText.style.display = "block";
         } else {
             image.src = originalImage;
-            hiddenText.computedStyleMap.display = "none";
+            hiddenText.style.display = "none";
         }
     });
 });
