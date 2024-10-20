@@ -1,4 +1,4 @@
-const imageElements = document.querySelectorAll(".clickable-image");
+const imageElements = document.querySelector(".clickable-image");
 
 
 
