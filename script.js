@@ -1,9 +1,10 @@
-const faqquestion = document.querySelectorAll('.faq-question');
+let faqquestion = document.querySelectorAll('.faq-question');
 
 faqquestion.addEventListener('click', function(element) {
     element.classList.toggle("active");
 
     const answer = element.nextElementSibling;
+    
     if (answer.style.display === "block") {
         answer.style.display = "none";
         element.querySelector('.plus-sign').textContent = "+";
