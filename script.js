@@ -1,7 +1,10 @@
+const imageElements = document.querySelectorAll(".clickable-image");
+
+
+
 function toggleAnswer(element) {
     element.classList.toggle("active");
     const answer = element.nextElementSibling;
-    const imageElements = document.querySelectorAll(".clickable-image");
 
     if (answer.style.display === "block") {
         answer.style.display = "none";
@@ -11,3 +14,9 @@ function toggleAnswer(element) {
         imageElements.src = "https://raw.githubusercontent.com/lmcandido/FAQ/0ff113a00d8f341ef2144542f39c7e33b9aa6f90/assets/images/icon-minus.svg";
     }
 }
+
+imageElements.forEach((element) => {
+    element.addEventListener('click', function(){
+        toggleAnswer(element);
+    });
+});
