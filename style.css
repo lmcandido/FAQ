@@ -1,3 +1,7 @@
+body {
+    background-color: gray;
+}
+
 .faq-container{
     max-width: 600px;
     margin: 0;
