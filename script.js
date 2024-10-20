@@ -8,9 +8,9 @@ function toggleAnswer(element) {
 
     if (answer.style.display === "block") {
         answer.style.display = "none";
-        image.imageElement.scr = image1;
+        image.scr = image1;
     } else {
         answer.style.display = "block";
-        image.imageElement.scr = image2;
+        image.scr = image2;
     }
 }
