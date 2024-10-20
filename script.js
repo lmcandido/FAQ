@@ -1,7 +1,7 @@
 function toggleAnswer(element) {
     element.classList.toggle("active");
     const answer = element.nextElementSibling;
-    const imageElements = document.querySelector(".clickable-image");
+    const imageElements = document.querySelectorAll(".clickable-image");
 
     if (answer.style.display === "block") {
         answer.style.display = "none";
