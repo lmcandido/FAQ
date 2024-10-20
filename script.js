@@ -14,7 +14,7 @@ function toggleAnswer(element) {
 }
 
 imageElements.forEach((element) => {
-    element.addEventListener("click", function(){
-        toggleAnswer(this);
-    });
+    element.onclick = function() {
+        toggleAnswer(element);
+    };
 });
