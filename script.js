@@ -1,8 +1,8 @@
-//const imageElements = document.querySelectorAll(".clickable-image");
+const imageElements = document.querySelectorAll(".clickable-image");
 
-function toggleAnswer(element) {
-    element.classList.toggle("active");
-    const answer = element.nextElementSibling;
+function toggleAnswer(name) {
+    name.classList.toggle("active");
+    const answer = name.nextElementSibling;
 
     if (answer.style.display === "block") {
         answer.style.display = "none";
@@ -13,6 +13,8 @@ function toggleAnswer(element) {
     }
 }
 
-Array.from(document.querySelectorAll(".clickable")).forEach(function(element) {
-    toggleAnswer(element);
-  });
+imageElements.forEach(element => {
+    element.onclick = function() {
+        toggleAnswer(element);
+    }
+});
