@@ -1,6 +1,6 @@
 const faqquestion = document.querySelector('.faq-question');
 
-function toggleAnswer(element) {
+function toggleAnswer() {
     element.classList.toggle("active");
 
     const answer = element.nextElementSibling;
@@ -13,4 +13,4 @@ function toggleAnswer(element) {
     }
 }
 
-faqquestion.addEventListener('click', toggleAnswer());
+faqquestion.addEventListener('click', toggleAnswer);
