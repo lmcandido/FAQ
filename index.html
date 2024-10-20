@@ -1,38 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FAQ</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
 </head>
+
 <body>
 
   <div class="faq-container">
+
+    <h2>FAQs</h2>
+
     <div class="faq-item">
       <div class="faq-question" onclick="toggleAnswer(this)">
         <span class="plus-sign">+</span>
-        <span class="question-text">What is HTML?</span>
+        <span class="question-text">What is Frontend Mentor, and how will it help me?</span>
       </div>
       <div class="faq-answer">
-        HTML stands for HyperText Markup Language. It is the standard language for creating web pages.
+        Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript.
+        It's suitable for all levels and ideal for portfolio building.
       </div>
     </div>
 
     <div class="faq-item">
       <div class="faq-question" onclick="toggleAnswer(this)">
         <span class="plus-sign">+</span>
-        <span class="question-text">What is CSS?</span>
+        <span class="question-text">Is Frontend Mentor free?</span>
       </div>
       <div class="faq-answer">
-        CSS stands for Cascading Style Sheets. It is used for styling the HTML elements on web pages.
+        Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+        option providing access to a range of projects suitable for all skill levels.
       </div>
     </div>
 
-    <!-- Add more FAQ items as needed -->
-    
   </div>
 
-  <script src="script.js"></script> <!-- Link to your JavaScript file -->
+  Can I use Frontend Mentor projects in my portfolio?
+
+  Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+  way to showcase your skills to potential employers!
+
+  How can I get help if I'm stuck on a Frontend Mentor challenge?
+  
+  The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+  channel where you can ask questions and seek support from other community members.
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lucas Candido</a>.
+  </div>
 </body>
 </html>
