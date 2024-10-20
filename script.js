@@ -1,6 +1,6 @@
-const faqquestion = document.querySelector('.faq-question');
+const faqquestion = document.querySelectorAll('.faq-question');
 
-function toggleAnswer() {
+faqquestion.addEventListener('click', function(element) {
     element.classList.toggle("active");
 
     const answer = element.nextElementSibling;
@@ -11,6 +11,4 @@ function toggleAnswer() {
         answer.style.display = "block";
         element.querySelector('.plus-sign').textContent = "-";
     }
-}
-
-faqquestion.addEventListener('click', toggleAnswer);
+});
