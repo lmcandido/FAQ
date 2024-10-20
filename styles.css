@@ -22,9 +22,11 @@ body {
   font-weight: bold;
 }
 
-.plus-sign {
-  font-size: 20px;
-  color: purple;
+.clickable-image {
+  display: inline;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin: 0;
 }
 
 .faq-answer{
