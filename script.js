@@ -1,22 +1,17 @@
-const imageElements = document.querySelectorAll(".clickable-image");
+const faqItems = document.querySelectorAll("faq-item");
 
-function toggleAnswer(element) {
-    element.classList.toggle("active");
-    const answer = element.nextElementSibling;
+for (let i = 0; i < faqItems.length; i++ ){
+    let faqQuestion = faqItems[i].querySelector('.faq-question');
+    let faqAnswer = faqItems[i].querySelector('.faq-answer');
+    let faqImage = faqItems[i].querySelector('.clickable-image');
 
-    if (answer.style.display === "block") {
-        answer.style.display = "none";
-        imageElements.src = "https://raw.githubusercontent.com/lmcandido/FAQ/262c5f514deea2f347245ccff6da1d1553bbf944/assets/images/icon-plus.svg";
-    } else {
-        answer.style.display = "block";
-        imageElements.src = "https://raw.githubusercontent.com/lmcandido/FAQ/0ff113a00d8f341ef2144542f39c7e33b9aa6f90/assets/images/icon-minus.svg";
-    }
-}
-
-for(let i = 0; i <= imageElements.length; i++){
-    const elementCount = imageElements[i];
-
-    elementCount.addEventListener('click', function() {
-        toggleAnswer(elementCount);
+    faqQuestion.addEventListener('click', function() {
+        if(faqAnswer.style.display === 'block'){
+            faqAnswer.style.display = "none";
+            faqImage.src = "https://raw.githubusercontent.com/lmcandido/FAQ/262c5f514deea2f347245ccff6da1d1553bbf944/assets/images/icon-plus.svg";
+        } else {
+            faqAnswer.style.display = "block";
+            faqImage.src = "https://raw.githubusercontent.com/lmcandido/FAQ/0ff113a00d8f341ef2144542f39c7e33b9aa6f90/assets/images/icon-minus.svg";
+        }
     });
 }
