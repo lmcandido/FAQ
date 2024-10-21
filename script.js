@@ -1,4 +1,4 @@
-const imageElements = document.querySelectorAll(".faq-question");
+const imageElements = document.querySelectorAll(".faq-item");
 
         // Define image sources
         const originalImage = "https://raw.githubusercontent.com/lmcandido/FAQ/262c5f514deea2f347245ccff6da1d1553bbf944/assets/images/icon-plus.svg";
