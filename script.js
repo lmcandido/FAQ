@@ -12,7 +12,7 @@ const imageElements = document.querySelectorAll(".faq-item");
             // Add click event listener to each image
             image.addEventListener("click", function() {
                 // Change the source of the image when clicked
-                if (image.src === originalImage) {
+                if (answer.style.display === "none") {
                     image.src = newImageSource; // Change to the new image
                     answer.style.display = "block"; // Show the hidden text
                 } else {
