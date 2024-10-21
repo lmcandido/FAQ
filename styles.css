@@ -8,12 +8,6 @@ body {
   padding: 20px;
 }
 
-.faq-item{
-  margin-bottom: 5px;
-  border-radius: 3px;
-  overflow: hidden; /* Hide answer when collapsed */
-}
-
 .faq-question {
   display: flex;
   justify-content: space-between;
@@ -22,22 +16,10 @@ body {
   font-weight: bold;
 }
 
-.clickable-image {
-  display: inline;
-  cursor: pointer;
-  transition: transform 0.3s;
-  margin: 0;
-}
-
 .faq-answer{
   padding: 15px;
   background-color: #fff;
   display: none; /* Hide answer by default */
-}
-
-.faq-question.active .plus-sign{
-  content: "-";
-  color: purple;
 }
 
   
