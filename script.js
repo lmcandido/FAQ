@@ -1,5 +1,3 @@
-let answer = document.querySelector('.faq-answer');
+const answer = document.querySelector('.faq-answer');
 
-answer.addEventListener('click', function() {
-    answer.classList.toggle('active');
-});
+console.log(answer);
