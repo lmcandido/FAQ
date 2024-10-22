@@ -44,8 +44,8 @@ body {
   display: none; /* Hide answer by default */
 }
 
-@media(min-width: 700px){
+/*@media(min-width: 700px){
   body{
       background-image: url('https://raw.githubusercontent.com/lmcandido/FAQ/1b993a6f4505379c0deae0d707cad99c4614d8f6/assets/images/background-pattern-desktop.svg');
   }
-}
+}*/
