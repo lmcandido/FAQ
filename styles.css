@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html{
+  background-image: url('https://raw.githubusercontent.com/lmcandido/FAQ/1b993a6f4505379c0deae0d707cad99c4614d8f6/assets/images/background-pattern-desktop.svg'); /* Replace with your background image URL */
+  background-size: 100% auto;
+  background-position: center; /* Center the background image */
+}
+
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f2f2f2;
@@ -11,9 +17,6 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-image: url('https://raw.githubusercontent.com/lmcandido/FAQ/1b993a6f4505379c0deae0d707cad99c4614d8f6/assets/images/background-pattern-desktop.svg'); /* Replace with your background image URL */
-  background-size: cover; /* Ensures the background image covers the whole page */
-  background-position: center; /* Center the background image */
 }
 
 .faq-container{
