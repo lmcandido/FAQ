@@ -7,7 +7,7 @@
 html{
   background-image: url('https://raw.githubusercontent.com/lmcandido/FAQ/1b993a6f4505379c0deae0d707cad99c4614d8f6/assets/images/background-pattern-desktop.svg'); /* Replace with your background image URL */
   background-size: 100% auto;
-  background-position: center; /* Center the background image */
+  background-position: top center;
 }
 
 body {
