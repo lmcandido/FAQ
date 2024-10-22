@@ -1,14 +1,14 @@
 body {
   background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .faq-container{
   max-width: 600px;
   margin: 0;
   padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .faq-question {
